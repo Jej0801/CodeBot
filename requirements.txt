@@ -1,2 +1,9 @@
 fastapi
-uvicorn
+uvicorn[standard]
+SQLAlchemy>=1.4
+alembic
+asyncpg
+python-dotenv
+pydantic
+passlib[bcrypt]
+psycopg2-binary

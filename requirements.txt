@@ -1,9 +1,20 @@
-fastapi
-uvicorn[standard]
-SQLAlchemy>=1.4
-alembic
-asyncpg
-python-dotenv
-pydantic
-passlib[bcrypt]
-psycopg2-binary
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Database - Async Support
+SQLAlchemy[asyncio]==2.0.23
+alembic==1.12.1
+asyncpg==0.29.0
+
+# Configuration
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Security
+passlib[bcrypt]==1.7.4
+cryptography==41.0.7  # For Fernet token encryption
+
+# PostgreSQL driver (sync, used by Alembic)
+psycopg2-binary==2.9.9
